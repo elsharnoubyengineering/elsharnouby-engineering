@@ -4,24 +4,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Elsharnouby Engineering Solutions - Mechanical design, heavy equipment engineering, CNC laser cutting, sheet metal fabrication and industrial manufacturing.">
+<meta name="description" content="Elsharnouby Engineering Solutions - Mechanical Design, Heavy Equipment, CNC Laser Cutting and Metal Fabrication.">
 <meta name="theme-color" content="#081526">
-<title>Elsharnouby Engineering Solutions | Engineering & Manufacturing</title>
+<title>Elsharnouby Engineering Solutions</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-:root {
- --navy:#081526;
- --navy2:#10243c;
- --gold:#c9a45c;
- --gold2:#e6c98b;
- --white:#ffffff;
- --light:#f5f6f8;
- --gray:#aeb8c5;
- --dark:#172538;
+:root{
+--navy:#081526;
+--navy2:#10243c;
+--gold:#c9a45c;
+--gold2:#e6c98b;
+--light:#f5f6f8;
+--dark:#172538;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -29,7 +26,6 @@ body{font-family:'Montserrat','Cairo',sans-serif;background:white;color:var(--da
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
 .container{width:90%;max-width:1200px;margin:auto}
-.gold{color:var(--gold)}
 .ar{font-family:'Cairo',sans-serif;text-align:right;direction:rtl}
 
 header{background:rgba(8,21,38,.97);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(201,164,92,.3)}
@@ -38,12 +34,16 @@ header{background:rgba(8,21,38,.97);position:sticky;top:0;z-index:1000;border-bo
 .logo span,.footer-logo span{color:var(--gold)}
 .logo small{display:block;font-size:9px;letter-spacing:3px;color:#c3cbd5;font-weight:500}
 .nav-links{display:flex;align-items:center;gap:24px;list-style:none}
-.nav-links a{color:white;font-size:12px;font-weight:600;transition:.3s}
+.nav-links a{color:white;font-size:12px;font-weight:600}
 .nav-links a:hover{color:var(--gold)}
 .nav-contact{background:var(--gold);color:var(--navy)!important;padding:10px 17px;border-radius:3px}
-.menu-btn{display:none;background:none;border:0;color:white;font-size:27px;cursor:pointer}
+.menu-btn{display:none;background:none;border:0;color:white;font-size:27px}
 
-.hero{min-height:660px;display:flex;align-items:center;position:relative;color:white;background:linear-gradient(90deg,rgba(5,16,30,.96),rgba(5,16,30,.68),rgba(5,16,30,.45)),url('https://stankit.pro/upload/iblock/8ad/9pwr8vo81bg0jjcl50mipz86dwakvsna.jpg') center/cover}
+.hero{
+min-height:660px;display:flex;align-items:center;color:white;
+background:linear-gradient(90deg,rgba(5,16,30,.96),rgba(5,16,30,.65),rgba(5,16,30,.4)),
+url('https://stankit.pro/upload/iblock/8ad/9pwr8vo81bg0jjcl50mipz86dwakvsna.jpg') center/cover;
+}
 .hero-content{max-width:760px;padding:100px 0}
 .hero-label{color:var(--gold2);letter-spacing:4px;font-size:12px;font-weight:700;margin-bottom:20px}
 .hero h1{font-size:clamp(36px,6vw,65px);line-height:1.15;font-weight:800;margin-bottom:22px}
@@ -51,7 +51,7 @@ header{background:rgba(8,21,38,.97);position:sticky;top:0;z-index:1000;border-bo
 .hero p{font-size:16px;color:#e0e5eb;max-width:650px;margin-bottom:15px}
 .hero .ar{font-size:17px}
 .hero-buttons{display:flex;flex-wrap:wrap;gap:15px;margin-top:32px}
-.btn{display:inline-block;padding:13px 25px;font-size:12px;font-weight:700;letter-spacing:1px;transition:.3s;border:1px solid var(--gold)}
+.btn{display:inline-block;padding:13px 25px;font-size:12px;font-weight:700;letter-spacing:1px;border:1px solid var(--gold);transition:.3s}
 .btn-gold{background:var(--gold);color:var(--navy)}
 .btn-outline{color:white}
 .btn:hover{background:var(--gold2);color:var(--navy)}
@@ -76,13 +76,11 @@ section{padding:90px 0}
 .feature{border-left:3px solid var(--gold);padding:10px 15px;background:white}
 .feature strong{color:var(--navy);font-size:13px}
 
-#services{background:white}
 .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
 .service{background:white;border:1px solid #e8ebef;overflow:hidden;transition:.3s;box-shadow:0 5px 20px rgba(0,0,0,.04)}
 .service:hover{transform:translateY(-6px);box-shadow:0 15px 35px rgba(0,0,0,.12);border-color:var(--gold)}
 .service-gallery{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#e8ebef}
 .service-gallery img{width:100%;height:190px;object-fit:cover;background:#ddd}
-.service-gallery img:first-child:last-child{grid-column:1/-1;height:260px}
 .service-body{padding:25px}
 .service-number{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:2px;margin-bottom:8px}
 .service h3{color:var(--navy);font-size:20px;margin-bottom:12px}
@@ -130,26 +128,26 @@ footer p{font-size:12px;margin-top:8px}
 .whatsapp{position:fixed;bottom:22px;right:22px;width:58px;height:58px;background:#20bd5a;color:white;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:27px;font-weight:bold;z-index:999;box-shadow:0 5px 20px rgba(0,0,0,.25)}
 
 @media(max-width:850px){
- .nav-links{display:none;position:absolute;top:82px;left:0;right:0;background:var(--navy);flex-direction:column;padding:25px;gap:20px;border-top:1px solid var(--gold)}
- .nav-links.active{display:flex}
- .menu-btn{display:block}
- .about-grid{grid-template-columns:1fr;gap:30px}
- .about-image{height:330px}
- .vision-grid{grid-template-columns:1fr}
- .process-grid{grid-template-columns:repeat(2,1fr)}
- .contact-grid{grid-template-columns:1fr}
+.nav-links{display:none;position:absolute;top:82px;left:0;right:0;background:var(--navy);flex-direction:column;padding:25px;gap:20px;border-top:1px solid var(--gold)}
+.nav-links.active{display:flex}
+.menu-btn{display:block}
+.about-grid{grid-template-columns:1fr;gap:30px}
+.about-image{height:330px}
+.vision-grid{grid-template-columns:1fr}
+.process-grid{grid-template-columns:repeat(2,1fr)}
+.contact-grid{grid-template-columns:1fr}
 }
 @media(max-width:600px){
- section{padding:65px 0}
- .hero{min-height:590px}
- .hero-content{padding:75px 0}
- .hero p{font-size:14px}
- .services-grid{grid-template-columns:1fr}
- .service-gallery img{height:150px}
- .service-body{padding:20px}
- .features{grid-template-columns:1fr}
- .process-grid{grid-template-columns:1fr 1fr}
- .logo{font-size:16px}
+section{padding:65px 0}
+.hero{min-height:590px}
+.hero-content{padding:75px 0}
+.hero p{font-size:14px}
+.services-grid{grid-template-columns:1fr}
+.service-gallery img{height:150px}
+.service-body{padding:20px}
+.features{grid-template-columns:1fr}
+.process-grid{grid-template-columns:1fr 1fr}
+.logo{font-size:16px}
 }
 </style>
 </head>
@@ -157,357 +155,343 @@ footer p{font-size:12px;margin-top:8px}
 <body>
 
 <header>
- <div class="container navbar">
-  <a href="#home" class="logo">
-   ELSHARNOBY <span>ENGINEERING</span>
-   <small>ENGINEERING SOLUTIONS</small>
-  </a>
-  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
-  <ul class="nav-links" id="navLinks">
-   <li><a href="#home" onclick="closeMenu()">HOME</a></li>
-   <li><a href="#about" onclick="closeMenu()">COMPANY</a></li>
-   <li><a href="#services" onclick="closeMenu()">SERVICES</a></li>
-   <li><a href="#vision" onclick="closeMenu()">OUR VISION</a></li>
-   <li><a href="#contact" class="nav-contact" onclick="closeMenu()">CONTACT</a></li>
-  </ul>
- </div>
+<div class="container navbar">
+<a href="#home" class="logo">
+ELSHARNOBY <span>ENGINEERING</span>
+<small>ENGINEERING SOLUTIONS</small>
+</a>
+<button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home" onclick="closeMenu()">HOME</a></li>
+<li><a href="#about" onclick="closeMenu()">COMPANY</a></li>
+<li><a href="#services" onclick="closeMenu()">SERVICES</a></li>
+<li><a href="#vision" onclick="closeMenu()">OUR VISION</a></li>
+<li><a href="#contact" class="nav-contact" onclick="closeMenu()">CONTACT</a></li>
+</ul>
+</div>
 </header>
 
 <section class="hero" id="home">
- <div class="container">
-  <div class="hero-content">
-   <div class="hero-label">ENGINEERING • FABRICATION • MANUFACTURING</div>
-   <h1>ENGINEERING<br><span>BEYOND LIMITS</span></h1>
-   <p>Professional engineering design, heavy equipment solutions, CNC laser cutting and precision metal fabrication.</p>
-   <p class="ar">حلول هندسية متكاملة في التصميم الميكانيكي والمعدات الثقيلة وتقطيع الليزر وتصنيع وتشكيل المعادن.</p>
-   <div class="hero-buttons">
-    <a href="#services" class="btn btn-gold">EXPLORE SERVICES</a>
-    <a href="#contact" class="btn btn-outline">CONTACT THE COMPANY</a>
-   </div>
-  </div>
- </div>
+<div class="container">
+<div class="hero-content">
+<div class="hero-label">ENGINEERING • FABRICATION • MANUFACTURING</div>
+<h1>ENGINEERING<br><span>BEYOND LIMITS</span></h1>
+<p>Professional engineering design, heavy equipment solutions, CNC laser cutting and precision metal fabrication.</p>
+<p class="ar">حلول هندسية متكاملة في التصميم الميكانيكي والمعدات الثقيلة وتقطيع الليزر وتصنيع وتشكيل المعادن.</p>
+<div class="hero-buttons">
+<a href="#services" class="btn btn-gold">EXPLORE SERVICES</a>
+<a href="#contact" class="btn btn-outline">CONTACT THE COMPANY</a>
+</div>
+</div>
+</div>
 </section>
 
 <section class="about" id="about">
- <div class="container">
-  <div class="about-grid">
-   <div class="about-image">
-    <img src="https://www.usideck.com/uploaded/125535/tolerie-usideck.jpg" alt="Precision sheet metal components">
-   </div>
-   <div class="about-text">
-    <div class="service-number">ABOUT THE COMPANY</div>
-    <h2>Elsharnouby Engineering Solutions</h2>
-    <p>Elsharnouby Engineering Solutions is an engineering and manufacturing company focused on mechanical design, heavy equipment components, sheet metal fabrication and industrial manufacturing solutions.</p>
-    <p>We combine engineering knowledge, practical manufacturing experience and modern production technologies to deliver solutions based on project requirements.</p>
-    <p class="ar">شركة الشرنوبي للحلول الهندسية متخصصة في التصميم الميكانيكي وتصنيع مكونات المعدات الثقيلة وتشكيل الصاج والحلول الصناعية. نجمع بين الخبرة الهندسية والتطبيق العملي وتقنيات التصنيع الحديثة لتقديم حلول تناسب متطلبات كل مشروع.</p>
-    <div class="features">
-     <div class="feature"><strong>01 — ENGINEERING DESIGN</strong></div>
-     <div class="feature"><strong>02 — PRECISION FABRICATION</strong></div>
-     <div class="feature"><strong>03 — INDUSTRIAL SOLUTIONS</strong></div>
-     <div class="feature"><strong>04 — CUSTOM MANUFACTURING</strong></div>
-    </div>
-   </div>
-  </div>
- </div>
+<div class="container">
+<div class="about-grid">
+<div class="about-image">
+<img src="https://gcadwebimages.blob.core.windows.net/webimages/blog_images/1777477563_Master_SolidWorks_The_Ultimate_3D_CAD_Guide.jpg" alt="Mechanical engineering CAD design">
+</div>
+<div class="about-text">
+<div class="service-number">ABOUT THE COMPANY</div>
+<h2>Elsharnouby Engineering Solutions</h2>
+<p>Elsharnouby Engineering Solutions is an engineering and manufacturing company focused on mechanical design, heavy equipment components, sheet metal fabrication and industrial manufacturing solutions.</p>
+<p>We combine engineering knowledge, practical manufacturing experience and modern production technologies to deliver solutions based on project requirements.</p>
+<p class="ar">شركة الشرنوبي للحلول الهندسية متخصصة في التصميم الميكانيكي وتصنيع مكونات المعدات الثقيلة وتشكيل الصاج والحلول الصناعية. نجمع بين الخبرة الهندسية والتطبيق العملي وتقنيات التصنيع الحديثة لتقديم حلول تناسب متطلبات كل مشروع.</p>
+<div class="features">
+<div class="feature"><strong>01 — ENGINEERING DESIGN</strong></div>
+<div class="feature"><strong>02 — PRECISION FABRICATION</strong></div>
+<div class="feature"><strong>03 — INDUSTRIAL SOLUTIONS</strong></div>
+<div class="feature"><strong>04 — CUSTOM MANUFACTURING</strong></div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
 <section id="services">
- <div class="container">
-  <div class="section-title">
-   <small>WHAT WE DO | خدماتنا</small>
-   <h2>Our Engineering Services</h2>
-   <div class="gold-line"></div>
-   <p>Integrated engineering, fabrication and manufacturing solutions.</p>
-   <p class="ar">حلول متكاملة في التصميم الهندسي والتصنيع وتشكيل المعادن.</p>
-  </div>
+<div class="container">
+<div class="section-title">
+<small>WHAT WE DO | خدماتنا</small>
+<h2>Our Engineering Services</h2>
+<div class="gold-line"></div>
+<p>Integrated engineering, fabrication and manufacturing solutions.</p>
+<p class="ar">حلول متكاملة في التصميم الهندسي والتصنيع وتشكيل المعادن.</p>
+</div>
 
-  <div class="services-grid">
+<div class="services-grid">
 
-   <!-- 01 HEAVY EQUIPMENT -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://image.made-in-china.com/2f0j00zaRbiIeKvPhU/I-Beam-of-Truck-Body-Parts.webp" alt="Heavy truck chassis crossmembers">
-     <img src="https://img.waimaoniu.net/3950/3950-202407110950532990.webp" alt="Heavy steel fabricated brackets">
-    </div>
-    <div class="service-body">
-     <div class="service-number">01 / HEAVY EQUIPMENT</div>
-     <h3>Heavy Equipment Parts</h3>
-     <p>Design and fabrication of heavy equipment spare parts, steel structures, ladders, platforms, gantries, chassis components and custom metal assemblies.</p>
-     <p class="ar">تصميم وتصنيع قطع غيار المعدات الثقيلة، والعلايات، والقناطر، والسلالم، والمنصات المعدنية، والشاسيهات ومكونات الهياكل وتجميعات الصاج حسب الطلب.</p>
-    </div>
-   </article>
+<!-- 01 HEAVY EQUIPMENT -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://image.made-in-china.com/2f0j00zaRbiIeKvPhU/I-Beam-of-Truck-Body-Parts.webp" alt="Heavy truck chassis steel crossmembers">
+<img src="https://img.waimaoniu.net/3950/3950-202407110950532990.webp" alt="Heavy steel fabricated brackets">
+</div>
+<div class="service-body">
+<div class="service-number">01 / HEAVY EQUIPMENT</div>
+<h3>Heavy Equipment Parts</h3>
+<p>Design and fabrication of heavy equipment spare parts, steel structures, ladders, platforms, gantries, chassis components and custom metal assemblies.</p>
+<p class="ar">تصميم وتصنيع قطع غيار المعدات الثقيلة، والعلايات، والقناطر، والسلالم، والمنصات المعدنية، والشاسيهات ومكونات الهياكل وتجميعات الصاج حسب الطلب.</p>
+</div>
+</article>
 
-   <!-- 02 TRUCK CHASSIS -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://cdn.verkehrsrundschau.de/thumb_690x389/media/5709/schwarzmueller-presseaussendung-20240129-02.jpg" alt="Trailer chassis assembly">
-     <img src="https://image.made-in-china.com/2f0j00zaRbiIeKvPhU/I-Beam-of-Truck-Body-Parts.webp" alt="Truck chassis steel crossmembers">
-    </div>
-    <div class="service-body">
-     <div class="service-number">02 / TRANSPORTATION</div>
-     <h3>Truck & Trailer Chassis</h3>
-     <p>Engineering and fabrication solutions for truck bodies, trailer structures, chassis components, brackets and heavy transportation equipment.</p>
-     <p class="ar">حلول هندسية وتصنيعية لهياكل سيارات النقل والمقطورات والشاسيهات ومكوناتها والحوامل المعدنية وتجهيزات النقل الثقيل.</p>
-    </div>
-   </article>
+<!-- 02 TRUCK CHASSIS -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://cdn.verkehrsrundschau.de/thumb_690x389/media/5709/schwarzmueller-presseaussendung-20240129-02.jpg" alt="Trailer chassis assembly">
+<img src="https://image.made-in-china.com/2f0j00lICeraAGEZbs/Reliable-Skeletal-Container-Trailer-with-140mm-Beam-Height-and-Certification.jpg" alt="Heavy transportation trailer chassis">
+</div>
+<div class="service-body">
+<div class="service-number">02 / TRANSPORTATION</div>
+<h3>Truck & Trailer Chassis</h3>
+<p>Engineering and fabrication solutions for truck bodies, trailer structures, chassis components, brackets and heavy transportation equipment.</p>
+<p class="ar">حلول هندسية وتصنيعية لهياكل سيارات النقل والمقطورات والشاسيهات ومكوناتها والحوامل المعدنية وتجهيزات النقل الثقيل.</p>
+</div>
+</article>
 
-   <!-- 03 SHEET METAL -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://www.usideck.com/uploaded/125535/tolerie-usideck.jpg" alt="Precision sheet metal components">
-     <img src="https://image.made-in-china.com/2f0j00VcsonlgWLuqS/Custom-Metal-Fabrication-Steel-Bending-and-Metal-Welding-Parts-Heavy-Bracket.webp" alt="Custom fabricated steel brackets">
-    </div>
-    <div class="service-body">
-     <div class="service-number">03 / SHEET METAL</div>
-     <h3>Sheet Metal Components</h3>
-     <p>Custom sheet metal parts, covers, enclosures, brackets, guards and fabricated components designed for industrial applications.</p>
-     <p class="ar">تصميم وتصنيع أجزاء الصاج حسب الطلب، مثل الأغطية والحوافظ والصناديق والحوامل والحمايات والمكونات المعدنية للاستخدامات الصناعية.</p>
-    </div>
-   </article>
+<!-- 03 SHEET METAL -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://www.usideck.com/uploaded/125535/tolerie-usideck.jpg" alt="Precision sheet metal components">
+<img src="https://image.made-in-china.com/2f0j00VcsonlgWLuqS/Custom-Metal-Fabrication-Steel-Bending-and-Metal-Welding-Parts-Heavy-Bracket.webp" alt="Custom fabricated steel brackets">
+</div>
+<div class="service-body">
+<div class="service-number">03 / SHEET METAL</div>
+<h3>Sheet Metal Components</h3>
+<p>Custom sheet metal parts, covers, enclosures, brackets, guards and fabricated components designed for industrial applications.</p>
+<p class="ar">تصميم وتصنيع أجزاء الصاج حسب الطلب، مثل الأغطية والحوافظ والصناديق والحوامل والحمايات والمكونات المعدنية للاستخدامات الصناعية.</p>
+</div>
+</article>
 
-   <!-- 04 LASER CUTTING -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://stankit.pro/upload/iblock/8ad/9pwr8vo81bg0jjcl50mipz86dwakvsna.jpg" alt="CNC fiber laser cutting steel with sparks">
-     <img src="https://www.usideck.com/uploaded/125535/tolerie-usideck.jpg" alt="Laser cut precision sheet metal parts">
-    </div>
-    <div class="service-body">
-     <div class="service-number">04 / CNC LASER</div>
-     <h3>CNC Laser Cutting</h3>
-     <p>Precision CNC laser cutting of sheet metal parts, including cutting preparation, nesting and production-ready cutting files.</p>
-     <p class="ar">تقطيع الصاج بالليزر CNC بدقة عالية، وتجهيز ملفات القص والتعشيق (Nesting) وإعداد الرسومات اللازمة للتصنيع.</p>
-    </div>
-   </article>
+<!-- 04 CNC LASER CUTTING -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://nncontrol.com/assets/images/cutting%20machine.png" alt="CNC fiber laser cutting steel with sparks">
+<img src="https://www.masterquality-eg.com/services/laser-cutting/" alt="CNC laser cutting service">
+</div>
+<div class="service-body">
+<div class="service-number">04 / CNC LASER</div>
+<h3>CNC Laser Cutting</h3>
+<p>Precision CNC laser cutting of sheet metal parts, including cutting preparation, nesting and production-ready cutting files.</p>
+<p class="ar">تقطيع الصاج بالليزر CNC بدقة عالية، وتجهيز ملفات القص والتعشيق (Nesting) وإعداد الرسومات اللازمة للتصنيع.</p>
+</div>
+</article>
 
-   <!-- 05 PRESS BRAKE -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://www.pmptech.pl/assets/img/gi%C4%99cie_jasny_opt.jpg" alt="CNC press brake sheet metal bending">
-     <img src="https://image.made-in-china.com/2f0j00VcsonlgWLuqS/Custom-Metal-Fabrication-Steel-Bending-and-Metal-Welding-Parts-Heavy-Bracket.webp" alt="Formed steel components">
-    </div>
-    <div class="service-body">
-     <div class="service-number">05 / METAL FORMING</div>
-     <h3>CNC Press Brake</h3>
-     <p>Accurate sheet metal bending and forming for industrial parts, cabinets, brackets, enclosures and custom metal products.</p>
-     <p class="ar">ثني وتشكيل المعادن باستخدام مكابس الثني CNC، لتصنيع الأجزاء الصناعية والكبائن والحوامل والحوافظ والمنتجات المعدنية حسب التصميم.</p>
-    </div>
-   </article>
+<!-- 05 PRESS BRAKE -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://www.pmptech.pl/assets/img/gi%C4%99cie_jasny_opt.jpg" alt="CNC press brake sheet metal bending">
+<img src="https://metaltechcolombia.com/assets/images/bending.png" alt="Industrial metal bending machine">
+</div>
+<div class="service-body">
+<div class="service-number">05 / METAL FORMING</div>
+<h3>CNC Press Brake</h3>
+<p>Accurate sheet metal bending and forming for industrial parts, cabinets, brackets, enclosures and custom metal products.</p>
+<p class="ar">ثني وتشكيل المعادن باستخدام مكابس الثني CNC، لتصنيع الأجزاء الصناعية والكبائن والحوامل والحوافظ والمنتجات المعدنية حسب التصميم.</p>
+</div>
+</article>
 
-   <!-- 06 ELECTRICAL ENCLOSURES -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://www.fee.de/fileadmin/Elektrotech_Engineering/Schaltschrankfertigung/Produktbild-Schaltschrankbau_1.jpg" alt="Industrial electrical control cabinets">
-     <img src="https://www.usideck.com/uploaded/125535/tolerie-usideck.jpg" alt="Metal electrical enclosure fabrication">
-    </div>
-    <div class="service-body">
-     <div class="service-number">06 / ELECTRICAL</div>
-     <h3>Electrical Enclosures</h3>
-     <p>Manufacturing of metal electrical cabinets, control panel enclosures, distribution boxes and custom sheet metal housings.</p>
-     <p class="ar">تصنيع علب وكبائن الكهرباء المعدنية، وصناديق التوزيع ولوحات التحكم والحوافظ المعدنية المصممة طبقًا لمتطلبات المشروع.</p>
-    </div>
-   </article>
+<!-- 06 ELECTRICAL ENCLOSURES -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://www.fee.de/fileadmin/Elektrotech_Engineering/Schaltschrankfertigung/Produktbild-Schaltschrankbau_1.jpg" alt="Industrial electrical control cabinet">
+<img src="https://image.made-in-china.com/202f0j00fmckULRGYwzW/Electric-Cabinet-Floor-Standing-Industrial-Electrical-Electric-Cabinet.webp" alt="Industrial electrical enclosure">
+</div>
+<div class="service-body">
+<div class="service-number">06 / ELECTRICAL</div>
+<h3>Electrical Enclosures</h3>
+<p>Manufacturing of metal electrical cabinets, control panel enclosures, distribution boxes and custom sheet metal housings.</p>
+<p class="ar">تصنيع علب وكبائن الكهرباء المعدنية، وصناديق التوزيع ولوحات التحكم والحوافظ المعدنية المصممة طبقًا لمتطلبات المشروع.</p>
+</div>
+</article>
 
-   <!-- 07 SOLAR STRUCTURES -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://www.pv-bracket.com/photo/ps204732138-hot_dip_galvanized_steel_photovoltaic_mounting_system_ground_solar_bracket_system.jpg" alt="Galvanized solar mounting steel structures">
-     <img src="https://www.pv-bracket.com/photo/ps204732138-hot_dip_galvanized_steel_photovoltaic_mounting_system_ground_solar_bracket_system.jpg" alt="Solar panel mounting support frames">
-    </div>
-    <div class="service-body">
-     <div class="service-number">07 / SOLAR ENERGY</div>
-     <h3>Solar Mounting Structures & Components</h3>
-     <p>Design and fabrication of solar panel mounting frames, support bases, steel profiles, brackets, rails, clamps, connectors and structural supports.</p>
-     <p class="ar">تصميم وتصنيع شاسيهات وهياكل تثبيت ألواح الطاقة الشمسية، والقواعد والقطاعات والحوامل والروابط والمشابك والدعامات وجميع مكونات الشاسيه.</p>
-    </div>
-   </article>
+<!-- 07 SOLAR STRUCTURES -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://www.pv-bracket.com/photo/ps204732138-hot_dip_galvanized_steel_photovoltaic_mounting_system_ground_solar_bracket_system.jpg" alt="Galvanized solar mounting structures">
+<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=80" alt="Solar panel installation">
+</div>
+<div class="service-body">
+<div class="service-number">07 / SOLAR ENERGY</div>
+<h3>Solar Mounting Structures & Components</h3>
+<p>Design and fabrication of solar panel mounting frames, support bases, steel profiles, brackets, rails, clamps, connectors and structural supports.</p>
+<p class="ar">تصميم وتصنيع شاسيهات وهياكل تثبيت ألواح الطاقة الشمسية، والقواعد والقطاعات والحوامل والروابط والمشابك والدعامات وجميع مكونات الشاسيه.</p>
+</div>
+</article>
 
-   <!-- 08 SMALL STORAGE STANDS -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://www.victoryracking.com/uploads/202332466/high-quality-heavy-duty-metal-shelving9036e281-4b29-4210-9685-d6cacab28e71.jpg" alt="Industrial metal storage racks">
-     <img src="https://www.usideck.com/uploaded/125535/tolerie-usideck.jpg" alt="Custom metal storage components">
-    </div>
-    <div class="service-body">
-     <div class="service-number">08 / STORAGE SOLUTIONS</div>
-     <h3>Small Metal Storage Stands</h3>
-     <p>Compact metal storage stands, small shelving units, workshop organizers and custom display or storage structures in different sizes and designs.</p>
-     <p class="ar">تصميم وتصنيع استاندات تخزين معدنية صغيرة، ورفوف ووحدات تنظيم للورش والمخازن، بأحجام وتصميمات مختلفة، مع إمكانية تنفيذ المنتج من أكثر من منظور حسب الطلب.</p>
-    </div>
-   </article>
+<!-- 08 STORAGE STANDS -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://www.victoryracking.com/uploads/202332466/high-quality-heavy-duty-metal-shelving9036e281-4b29-4210-9685-d6cacab28e71.jpg" alt="Industrial metal storage racks">
+<img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Warehouse storage shelving">
+</div>
+<div class="service-body">
+<div class="service-number">08 / STORAGE SOLUTIONS</div>
+<h3>Small Metal Storage Stands</h3>
+<p>Compact metal storage stands, small shelving units, workshop organizers and custom display or storage structures in different sizes and designs.</p>
+<p class="ar">تصميم وتصنيع استاندات تخزين معدنية صغيرة، ورفوف ووحدات تنظيم للورش والمخازن، بأحجام وتصميمات مختلفة، مع إمكانية تنفيذ المنتج من أكثر من منظور حسب الطلب.</p>
+</div>
+</article>
 
-   <!-- 09 LOCKERS -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://images1.loopnet.com/i2/j9r6UOu1HQVvejfh8ugDyNyqcekLHiFBbtam6TYy-qg/110/4415-W-Hargrave-Ave-Post-Falls-ID-Interior-Photo-3-Large.jpg" alt="Industrial metal lockers">
-     <img src="https://haksancelikesya.com.tr/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2025-08-22-at-13.-1-rammz3mc265a3p9lw5vbqkxjc3ja5gpoi0f5zz0uj8.jpg" alt="Steel locker cabinets">
-    </div>
-    <div class="service-body">
-     <div class="service-number">09 / METAL PRODUCTS</div>
-     <h3>Metal Lockers & Cabinets</h3>
-     <p>Design and manufacturing of metal lockers, multi-door cabinets, storage cabinets and custom steel furniture for factories, workshops and commercial facilities.</p>
-     <p class="ar">تصميم وتصنيع اللوكرات والخزائن المعدنية بأشكال وتقسيمات مختلفة، ووحدات التخزين والأثاث المعدني للمصانع والورش والمنشآت التجارية.</p>
-    </div>
-   </article>
+<!-- 09 METAL LOCKERS -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://images1.loopnet.com/i2/j9r6UOu1HQVvejfh8ugDyNyqcekLHiFBbtam6TYy-qg/110/4415-W-Hargrave-Ave-Post-Falls-ID-Interior-Photo-3-Large.jpg" alt="Industrial metal lockers">
+<img src="https://haksancelikesya.com.tr/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2025-08-22-at-13.-1-rammz3mc265a3p9lw5vbqkxjc3ja5gpoi0f5zz0uj8.jpg" alt="Steel locker cabinets">
+</div>
+<div class="service-body">
+<div class="service-number">09 / METAL PRODUCTS</div>
+<h3>Metal Lockers & Cabinets</h3>
+<p>Design and manufacturing of metal lockers, multi-door cabinets, storage cabinets and custom steel furniture for factories, workshops and commercial facilities.</p>
+<p class="ar">تصميم وتصنيع اللوكرات والخزائن المعدنية بأشكال وتقسيمات مختلفة، ووحدات التخزين والأثاث المعدني للمصانع والورش والمنشآت التجارية.</p>
+</div>
+</article>
 
-   <!-- 10 DECORATIVE LASER CUT GATES -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://media.karousell.com/media/photos/products/2025/3/12/islamic_laser_cutting_gate__la_1741775688_5033afb3" alt="Islamic geometric laser cut metal gate">
-     <img src="https://i.etsystatic.com/35670280/r/il/a932ed/7584407263/il_fullxfull.7584407263_iaxh.jpg" alt="Luxury floral laser cut steel gate">
-    </div>
-    <div class="service-body">
-     <div class="service-number">10 / DECORATIVE METALWORK</div>
-     <h3>Decorative Gates & Metal Works</h3>
-     <p>Custom metal gates, decorative laser-cut panels, architectural metal screens and bespoke decorative steel products.</p>
-     <p class="ar">تصميم وتصنيع البوابات المعدنية والديكورات، والبانوهات المقطوعة بالليزر والفواصل المعدنية والأعمال المعمارية حسب الطلب.</p>
-    </div>
-   </article>
+<!-- 10 LASER CUT IRON GATES -->
+<article class="service">
+<div class="service-gallery">
+<img src="https://zics.ng/web/image/product.template/2888/image_1024?unique=3c028b5" alt="Laser cut iron gate with decorative steel patterns">
+<img src="https://www.kashab.ro/cdn/shop/files/3454345345.jpg?v=1730746426&width=3200" alt="Decorative laser cut iron gate">
+</div>
+<div class="service-body">
+<div class="service-number">10 / DECORATIVE METALWORK</div>
+<h3>Laser Cut Iron Gates & Metal Works</h3>
+<p>Design and fabrication of decorative iron gates, laser-cut steel panels, geometric patterns, architectural screens and custom metal entrance solutions.</p>
+<p class="ar">تصميم وتصنيع بوابات الحديد المفرغة بالليزر، والبوابات الديكورية، والبانوهات المعدنية ذات الزخارف الهندسية والإسلامية، والفواصل والأعمال المعدنية المعمارية حسب الطلب.</p>
+</div>
+</article>
 
-   <!-- 11 PRECISION METAL PARTS -->
-   <article class="service">
-    <div class="service-gallery">
-     <img src="https://www.usideck.com/uploaded/125535/tolerie-usideck.jpg" alt="Precision fabricated metal components">
-     <img src="https://img.waimaoniu.net/3950/3950-202407110950532990.webp" alt="Industrial precision steel parts">
-    </div>
-    <div class="service-body">
-     <div class="service-number">11 / PRECISION METAL PARTS</div>
-     <h3>Metal Laser Nozzles & Parts</h3>
-     <p>Metal laser cutting consumables and precision accessories, including cutting nozzles, copper components and small machine parts.</p>
-     <p class="ar">بوبات ونوزلات ماكينات تقطيع الليزر المعدنية، وقطع الغيار والإكسسوارات الدقيقة، ومكونات النحاس وملحقات الماكينات.</p>
-    </div>
-   </article>
-
-  </div>
- </div>
+</div>
+</div>
 </section>
 
 <section class="vision" id="vision">
- <div class="container">
-  <div class="section-title">
-   <small>OUR PRINCIPLES</small>
-   <h2>Our Mission & Vision</h2>
-   <div class="gold-line"></div>
-   <p>Building a strong foundation for engineering excellence.</p>
-  </div>
-  <div class="vision-grid">
-   <div class="vision-card">
-    <div class="vision-icon">⚙</div>
-    <h3>Our Mission</h3>
-    <p>Delivering practical engineering and manufacturing solutions with a focus on quality, precision and customer requirements.</p>
-    <p class="ar">تقديم حلول هندسية وتصنيعية عملية مع التركيز على الجودة والدقة وتلبية احتياجات العملاء.</p>
-   </div>
-   <div class="vision-card">
-    <div class="vision-icon">◆</div>
-    <h3>Our Vision</h3>
-    <p>Growing into a recognized engineering and manufacturing brand serving local and international markets.</p>
-    <p class="ar">التوسع لنصبح علامة هندسية وتصنيعية متميزة تخدم الأسواق المحلية والدولية.</p>
-   </div>
-   <div class="vision-card">
-    <div class="vision-icon">✦</div>
-    <h3>Our Values</h3>
-    <p>Quality, integrity, innovation, precision and long-term partnerships.</p>
-    <p class="ar">الجودة والمصداقية والابتكار والدقة وبناء شراكات طويلة الأمد.</p>
-   </div>
-  </div>
- </div>
+<div class="container">
+<div class="section-title">
+<small>OUR PRINCIPLES</small>
+<h2>Our Mission & Vision</h2>
+<div class="gold-line"></div>
+<p>Building a strong foundation for engineering excellence.</p>
+</div>
+<div class="vision-grid">
+<div class="vision-card">
+<div class="vision-icon">⚙</div>
+<h3>Our Mission</h3>
+<p>Delivering practical engineering and manufacturing solutions with a focus on quality, precision and customer requirements.</p>
+<p class="ar">تقديم حلول هندسية وتصنيعية عملية مع التركيز على الجودة والدقة وتلبية احتياجات العملاء.</p>
+</div>
+<div class="vision-card">
+<div class="vision-icon">◆</div>
+<h3>Our Vision</h3>
+<p>Growing into a recognized engineering and manufacturing brand serving local and international markets.</p>
+<p class="ar">التوسع لنصبح علامة هندسية وتصنيعية متميزة تخدم الأسواق المحلية والدولية.</p>
+</div>
+<div class="vision-card">
+<div class="vision-icon">✦</div>
+<h3>Our Values</h3>
+<p>Quality, integrity, innovation, precision and long-term partnerships.</p>
+<p class="ar">الجودة والمصداقية والابتكار والدقة وبناء شراكات طويلة الأمد.</p>
+</div>
+</div>
+</div>
 </section>
 
 <section class="process">
- <div class="container">
-  <div class="section-title">
-   <small>HOW WE WORK</small>
-   <h2>Our Work Process</h2>
-   <div class="gold-line"></div>
-   <p>From engineering concepts to manufacturing solutions.</p>
-   <p class="ar">من الفكرة الهندسية إلى الحل التصنيعي المتكامل.</p>
-  </div>
-  <div class="process-grid">
-   <div class="process-card">
-    <div class="process-number">01</div>
-    <h3>Project Consultation</h3>
-    <p>Understanding project needs and technical requirements.</p>
-   </div>
-   <div class="process-card">
-    <div class="process-number">02</div>
-    <h3>Engineering Design</h3>
-    <p>Preparing technical drawings and design solutions.</p>
-   </div>
-   <div class="process-card">
-    <div class="process-number">03</div>
-    <h3>Manufacturing</h3>
-    <p>Fabrication, cutting, bending and assembly.</p>
-   </div>
-   <div class="process-card">
-    <div class="process-number">04</div>
-    <h3>Final Delivery</h3>
-    <p>Reviewing the finished product against project requirements.</p>
-   </div>
-  </div>
- </div>
+<div class="container">
+<div class="section-title">
+<small>HOW WE WORK</small>
+<h2>Our Work Process</h2>
+<div class="gold-line"></div>
+<p>From engineering concepts to manufacturing solutions.</p>
+<p class="ar">من الفكرة الهندسية إلى الحل التصنيعي المتكامل.</p>
+</div>
+<div class="process-grid">
+<div class="process-card">
+<div class="process-number">01</div>
+<h3>Project Consultation</h3>
+<p>Understanding project needs and technical requirements.</p>
+</div>
+<div class="process-card">
+<div class="process-number">02</div>
+<h3>Engineering Design</h3>
+<p>Preparing technical drawings and design solutions.</p>
+</div>
+<div class="process-card">
+<div class="process-number">03</div>
+<h3>Manufacturing</h3>
+<p>Fabrication, cutting, bending and assembly.</p>
+</div>
+<div class="process-card">
+<div class="process-number">04</div>
+<h3>Final Delivery</h3>
+<p>Reviewing the finished product against project requirements.</p>
+</div>
+</div>
+</div>
 </section>
 
 <section class="contact" id="contact">
- <div class="container">
-  <div class="section-title">
-   <small>GET IN TOUCH</small>
-   <h2>Contact Our Company</h2>
-   <div class="gold-line"></div>
-   <p>Let's discuss your next engineering or manufacturing project.</p>
-   <p class="ar">يسعدنا التواصل معكم ومناقشة مشروعكم القادم.</p>
-  </div>
-  <div class="contact-grid">
-   <div class="contact-card">
-    <div class="icon">☎</div>
-    <h3>PHONE & WHATSAPP</h3>
-    <p><a href="tel:+201063490327">+20 106 349 0327</a></p>
-    <p><a href="https://wa.me/201063490327" target="_blank">Chat on WhatsApp</a></p>
-   </div>
-   <div class="contact-card">
-    <div class="icon">✉</div>
-    <h3>EMAIL</h3>
-    <p><a href="mailto:elsharnoubyfady@gmail.com">elsharnoubyfady@gmail.com</a></p>
-   </div>
-   <div class="contact-card">
-    <div class="icon">⌖</div>
-    <h3>LOCATION</h3>
-    <p>Egypt</p>
-    <p>Serving engineering and manufacturing projects.</p>
-   </div>
-  </div>
- </div>
+<div class="container">
+<div class="section-title">
+<small>GET IN TOUCH</small>
+<h2>Contact Our Company</h2>
+<div class="gold-line"></div>
+<p>Let's discuss your next engineering or manufacturing project.</p>
+<p class="ar">يسعدنا التواصل معكم ومناقشة مشروعكم القادم.</p>
+</div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="icon">☎</div>
+<h3>PHONE & WHATSAPP</h3>
+<p><a href="tel:+201063490327">+20 106 349 0327</a></p>
+<p><a href="https://wa.me/201063490327" target="_blank">Chat on WhatsApp</a></p>
+</div>
+<div class="contact-card">
+<div class="icon">✉</div>
+<h3>EMAIL</h3>
+<p><a href="mailto:elsharnoubyfady@gmail.com">elsharnoubyfady@gmail.com</a></p>
+</div>
+<div class="contact-card">
+<div class="icon">⌖</div>
+<h3>LOCATION</h3>
+<p>Egypt</p>
+<p>Serving engineering and manufacturing projects.</p>
+</div>
+</div>
+</div>
 </section>
 
 <div class="cta">
- <div class="container">
-  <h2>Have an Engineering Project?</h2>
-  <p>Contact Elsharnouby Engineering Solutions to discuss your requirements.</p>
-  <a class="btn" href="https://wa.me/201063490327" target="_blank">START YOUR PROJECT</a>
- </div>
+<div class="container">
+<h2>Have an Engineering Project?</h2>
+<p>Contact Elsharnouby Engineering Solutions to discuss your requirements.</p>
+<a class="btn" href="https://wa.me/201063490327" target="_blank">START YOUR PROJECT</a>
+</div>
 </div>
 
 <footer>
- <div class="container">
-  <div class="footer-logo">ELSHARNOBY <span>ENGINEERING</span></div>
-  <p>ENGINEERING SOLUTIONS • FABRICATION • MANUFACTURING</p>
-  <div class="footer-links">
-   <a href="#home">Home</a>
-   <a href="#about">Company</a>
-   <a href="#services">Services</a>
-   <a href="#vision">Vision</a>
-   <a href="#contact">Contact</a>
-  </div>
-  <p>© <span id="year"></span> Elsharnouby Engineering Solutions. All Rights Reserved.</p>
- </div>
+<div class="container">
+<div class="footer-logo">ELSHARNOBY <span>ENGINEERING</span></div>
+<p>ENGINEERING SOLUTIONS • FABRICATION • MANUFACTURING</p>
+<div class="footer-links">
+<a href="#home">Home</a>
+<a href="#about">Company</a>
+<a href="#services">Services</a>
+<a href="#vision">Vision</a>
+<a href="#contact">Contact</a>
+</div>
+<p>© <span id="year"></span> Elsharnouby Engineering Solutions. All Rights Reserved.</p>
+</div>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/201063490327" target="_blank" aria-label="Contact on WhatsApp">✆</a>
 
 <script>
 function toggleMenu(){
- document.getElementById('navLinks').classList.toggle('active');
+document.getElementById('navLinks').classList.toggle('active');
 }
 function closeMenu(){
- document.getElementById('navLinks').classList.remove('active');
+document.getElementById('navLinks').classList.remove('active');
 }
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
