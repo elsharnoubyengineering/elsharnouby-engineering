@@ -1,188 +1,659 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elsharnouby Engineering Solutions</title>
-<meta name="description" content="Professional Mechanical Design, Heavy Equipment Engineering, CNC Laser Cutting and Sheet Metal Fabrication.">
+
+<title>Elsharnouby Engineering Solutions | Mechanical Design & CNC</title>
+
+<meta name="description" content="Elsharnouby Engineering Solutions provides mechanical design, heavy equipment engineering, CNC laser cutting, sheet metal fabrication and industrial manufacturing solutions.">
+
+<meta name="theme-color" content="#081525">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#0b1120;color:#fff;line-height:1.6}
-header{background:#101a2d;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #26344c;position:sticky;top:0;z-index:10}
-.logo{font-size:20px;font-weight:bold;color:#e9ad46}
-nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px}
-nav a:hover{color:#e9ad46}
-.hero{min-height:580px;padding:110px 8%;display:flex;align-items:center;background:linear-gradient(90deg,#0b1120 35%,#101a2d 100%)}
-.hero-content{max-width:750px}
-.tag{color:#e9ad46;letter-spacing:3px;font-size:13px}
-h1{font-size:48px;line-height:1.2;margin:20px 0}
-h1 span{color:#e9ad46}
-.hero p{color:#b7c2d4;font-size:17px;max-width:650px;margin-bottom:30px}
-.btn{display:inline-block;padding:14px 27px;background:#e9ad46;color:#101a2d;text-decoration:none;font-weight:bold;border-radius:5px}
-.btn:hover{background:#fff}
-section{padding:80px 8%}
-.heading{text-align:center;margin-bottom:45px}
-.heading h2{font-size:34px;margin-bottom:10px}
-.heading p{color:#9eabc0}
-.gold{color:#e9ad46}
-.about{background:#101a2d}
-.about-content{max-width:850px;margin:auto;text-align:center;color:#bac5d6;font-size:17px}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
-.service{background:#121e32;padding:30px;border:1px solid #273750;border-radius:8px;transition:.3s}
-.service:hover{transform:translateY(-7px);border-color:#e9ad46}
-.service .icon{font-size:35px;margin-bottom:15px}
-.service h3{color:#e9ad46;margin-bottom:12px}
-.service p{color:#aab7ca;font-size:14px}
-.why{background:#101a2d}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px;text-align:center}
-.feature{padding:25px}
-.feature h3{color:#e9ad46;margin-bottom:10px}
-.feature p{color:#aab7ca}
-.contact{text-align:center}
-.contact p{color:#b7c2d4;margin:12px}
-footer{background:#070c16;text-align:center;padding:25px;color:#8190a5;font-size:13px}
-@media(max-width:700px){
-header{flex-direction:column;gap:12px}
-nav a{margin:0 7px;font-size:12px}
-h1{font-size:36px}
-.hero{min-height:500px;padding:75px 7%}
-section{padding:65px 7%}
+:root {
+  --navy: #081525;
+  --navy2: #10243b;
+  --gold: #d6ad61;
+  --light: #f5f2eb;
+  --muted: #aab5c2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--navy);
+  color: white;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+header {
+  background: rgba(8,21,37,.96);
+  border-bottom: 1px solid rgba(214,173,97,.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: bold;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+.logo span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: white;
+  font-weight: normal;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+nav a {
+  font-size: 13px;
+  color: #e0e5eb;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.menu-btn {
+  display: none;
+  color: var(--gold);
+  background: none;
+  border: 1px solid var(--gold);
+  padding: 7px 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(8,21,37,.98), rgba(8,21,37,.76)),
+    repeating-linear-gradient(135deg, #10243b 0px, #10243b 2px, #081525 2px, #081525 35px);
+  border-bottom: 1px solid rgba(214,173,97,.2);
+}
+
+.hero-content {
+  max-width: 760px;
+  padding: 90px 0;
+}
+
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 65px);
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  color: #c1cbd5;
+  max-width: 650px;
+  font-size: 17px;
+  margin-bottom: 32px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  border: 1px solid var(--gold);
+  font-size: 13px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: white;
+  color: var(--navy);
+  border-color: white;
+}
+
+section {
+  padding: 85px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title small {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 11px;
+}
+
+.section-title h2 {
+  font-size: 34px;
+  margin-top: 8px;
+}
+
+.section-title p {
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+.about {
+  background: #0c1c30;
+}
+
+.about-content {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-content p {
+  color: #c0cad5;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.gold-line {
+  width: 65px;
+  height: 3px;
+  background: var(--gold);
+  margin: 20px auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service {
+  background: var(--navy2);
+  border: 1px solid rgba(214,173,97,.2);
+  padding: 30px 24px;
+  min-height: 230px;
+  transition: .3s;
+}
+
+.service:hover {
+  transform: translateY(-7px);
+  border-color: var(--gold);
+}
+
+.service-number {
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.service h3 {
+  font-size: 19px;
+  margin: 18px 0 12px;
+}
+
+.service p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.why {
+  background: #0c1c30;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature {
+  text-align: center;
+  padding: 25px;
+  border-bottom: 2px solid var(--gold);
+  background: rgba(255,255,255,.025);
+}
+
+.feature h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.contact {
+  background:
+    linear-gradient(rgba(8,21,37,.96), rgba(8,21,37,.96)),
+    repeating-linear-gradient(45deg, #10243b 0 2px, #081525 2px 25px);
+}
+
+.contact-content {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-content > p {
+  color: var(--muted);
+  margin: 15px 0 30px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  border: 1px solid rgba(214,173,97,.35);
+  padding: 14px 20px;
+  font-size: 14px;
+  color: var(--gold);
+}
+
+footer {
+  background: #050e19;
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid rgba(214,173,97,.3);
+}
+
+footer p {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+footer strong {
+  color: var(--gold);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 20px;
+  background: #20b86a;
+  color: white;
+  padding: 13px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 13px;
+  z-index: 99;
+  box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+
+@media(max-width: 800px) {
+  .menu-btn {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    background: var(--navy2);
+    padding: 20px;
+    flex-direction: column;
+    gap: 18px;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .services-grid,
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 530px;
+  }
+
+  .hero-content {
+    padding: 70px 0;
+  }
+
+  section {
+    padding: 65px 0;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">ELSHARNOBY ENGINEERING</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
+  <div class="container nav">
+    <a href="#home" class="logo">
+      ELSHARNouby ENGINEERING
+      <span>SOLUTIONS</span>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+
+    <nav id="navigation">
+      <a href="#home" onclick="closeMenu()">HOME</a>
+      <a href="#about" onclick="closeMenu()">ABOUT</a>
+      <a href="#services" onclick="closeMenu()">SERVICES</a>
+      <a href="#why" onclick="closeMenu()">WHY US</a>
+      <a href="#contact" onclick="closeMenu()">CONTACT</a>
+    </nav>
+  </div>
 </header>
 
-<div class="hero" id="home">
-<div class="hero-content">
-<div class="tag">ENGINEERING • DESIGN • MANUFACTURING</div>
-<h1>Engineering Ideas.<br><span>Building Solutions.</span></h1>
-<p>
-Welcome to Elsharnouby Engineering Solutions.
-We provide professional mechanical design, heavy equipment engineering,
-CNC laser cutting and sheet metal fabrication solutions.
-</p>
-<a href="#services" class="btn">EXPLORE OUR SERVICES</a>
-</div>
-</div>
+<main>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">ENGINEERING • DESIGN • MANUFACTURING</div>
+
+      <h1>
+        Engineering Ideas.<br>
+        <span>Building Solutions.</span>
+      </h1>
+
+      <p>
+        Elsharnouby Engineering Solutions delivers professional
+        mechanical design, heavy equipment engineering,
+        CNC laser cutting, sheet metal fabrication and
+        industrial manufacturing solutions.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-primary" href="#services">EXPLORE OUR SERVICES</a>
+        <a class="btn" href="https://wa.me/201063490327" target="_blank" rel="noopener">CONTACT US</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="about" id="about">
-<div class="heading">
-<div class="gold">WHO WE ARE</div>
-<h2>About <span class="gold">Our Company</span></h2>
-</div>
-<div class="about-content">
-<p>
-Elsharnouby Engineering Solutions is an engineering-focused company
-specializing in mechanical design, industrial solutions and advanced
-manufacturing.
-</p>
-<br>
-<p>
-Our mission is to transform engineering concepts into practical,
-accurate and high-quality products through innovation, technical
-expertise and precision manufacturing.
-</p>
-</div>
+  <div class="container">
+    <div class="section-title">
+      <small>WHO WE ARE</small>
+      <h2>About Our Company</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="about-content">
+      <p>
+        <strong>Elsharnouby Engineering Solutions</strong>
+        is an engineering-focused company dedicated to
+        providing practical and professional solutions
+        for industrial and manufacturing applications.
+      </p>
+
+      <p>
+        We combine mechanical engineering knowledge,
+        modern design tools and manufacturing processes
+        to transform engineering concepts into practical solutions.
+      </p>
+
+      <p>
+        Our focus includes mechanical design, transportation
+        and heavy equipment design, CNC laser cutting,
+        sheet metal fabrication and industrial solutions.
+      </p>
+    </div>
+  </div>
 </section>
 
 <section id="services">
-<div class="heading">
-<div class="gold">WHAT WE DO</div>
-<h2>Our <span class="gold">Services</span></h2>
-<p>Integrated engineering and manufacturing solutions.</p>
-</div>
-<div class="services">
+  <div class="container">
+    <div class="section-title">
+      <small>WHAT WE DO</small>
+      <h2>Our Engineering Services</h2>
+      <div class="gold-line"></div>
+      <p>Integrated engineering and manufacturing solutions.</p>
+    </div>
 
-<div class="service">
-<div class="icon">⚙️</div>
-<h3>Mechanical Design</h3>
-<p>Professional 2D and 3D mechanical design, CAD modeling and engineering drawings.</p>
-</div>
+    <div class="services-grid">
 
-<div class="service">
-<div class="icon">🚜</div>
-<h3>Heavy Equipment Design</h3>
-<p>Design and development of transportation systems, heavy equipment and industrial components.</p>
-</div>
+      <article class="service">
+        <div class="service-number">01 / DESIGN</div>
+        <h3>Mechanical Design</h3>
+        <p>
+          Professional 2D and 3D mechanical design,
+          engineering drawings, product development
+          and manufacturing-ready designs.
+        </p>
+      </article>
 
-<div class="service">
-<div class="icon">🔥</div>
-<h3>CNC Laser Cutting</h3>
-<p>Precision CNC laser cutting solutions for metal sheets and industrial applications.</p>
-</div>
+      <article class="service">
+        <div class="service-number">02 / HEAVY EQUIPMENT</div>
+        <h3>Heavy Equipment & Transportation</h3>
+        <p>
+          Design and engineering solutions for
+          transportation systems, heavy equipment,
+          structures and industrial applications.
+        </p>
+      </article>
 
-<div class="service">
-<div class="icon">🏭</div>
-<h3>Sheet Metal Fabrication</h3>
-<p>Metal enclosures, cabinets, custom fabrication and sheet metal manufacturing.</p>
-</div>
+      <article class="service">
+        <div class="service-number">03 / CNC</div>
+        <h3>CNC Laser Cutting</h3>
+        <p>
+          CNC laser cutting preparation, cutting files,
+          nesting and precision sheet metal part
+          manufacturing support.
+        </p>
+      </article>
 
-<div class="service">
-<div class="icon">📐</div>
-<h3>CAD & Engineering</h3>
-<p>Engineering drawings, manufacturing-ready DXF files and technical documentation.</p>
-</div>
+      <article class="service">
+        <div class="service-number">04 / FABRICATION</div>
+        <h3>Sheet Metal Fabrication</h3>
+        <p>
+          Sheet metal development, flat patterns,
+          bending designs, fabrication drawings
+          and production preparation.
+        </p>
+      </article>
 
-<div class="service">
-<div class="icon">🔩</div>
-<h3>Industrial Solutions</h3>
-<p>Practical engineering solutions for industrial machinery and manufacturing projects.</p>
-</div>
+      <article class="service">
+        <div class="service-number">05 / ENGINEERING</div>
+        <h3>Industrial Engineering Solutions</h3>
+        <p>
+          Practical engineering support for industrial
+          components, machinery and manufacturing
+          requirements.
+        </p>
+      </article>
 
-</div>
+      <article class="service">
+        <div class="service-number">06 / PRODUCTION</div>
+        <h3>Manufacturing Support</h3>
+        <p>
+          Connecting engineering design with
+          production processes, fabrication
+          requirements and workshop execution.
+        </p>
+      </article>
+
+    </div>
+  </div>
 </section>
 
-<section class="why">
-<div class="heading">
-<div class="gold">OUR ADVANTAGES</div>
-<h2>Why Choose <span class="gold">Us?</span></h2>
-</div>
-<div class="features">
-<div class="feature">
-<h3>Precision</h3>
-<p>Attention to detail in every engineering project.</p>
-</div>
-<div class="feature">
-<h3>Innovation</h3>
-<p>Smart solutions for modern manufacturing challenges.</p>
-</div>
-<div class="feature">
-<h3>Quality</h3>
-<p>Commitment to professional engineering standards.</p>
-</div>
-<div class="feature">
-<h3>Experience</h3>
-<p>Practical knowledge in design and fabrication.</p>
-</div>
-</div>
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-title">
+      <small>OUR APPROACH</small>
+      <h2>Why Choose Us?</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        <h3>Engineering Focus</h3>
+        <p>
+          Designs developed with practical
+          manufacturing requirements in mind.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>Design to Production</h3>
+        <p>
+          Understanding the connection between
+          engineering drawings and workshop processes.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>Professional Commitment</h3>
+        <p>
+          Focus on technical quality, clear communication
+          and practical engineering solutions.
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <section class="contact" id="contact">
-<div class="heading">
-<div class="gold">LET'S WORK TOGETHER</div>
-<h2>Contact <span class="gold">Us</span></h2>
-<p>Have a project in mind? Let's turn your idea into reality.</p>
-</div>
-<a class="btn" href="mailto:info@elsharnoubyengineering.com">CONTACT OUR TEAM</a>
-<p>Elsharnouby Engineering Solutions</p>
-<p>Tanta, Egypt</p>
+  <div class="container">
+    <div class="section-title">
+      <small>LET'S WORK TOGETHER</small>
+      <h2>Contact Our Team</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="contact-content">
+      <p>
+        Have an engineering project or manufacturing
+        requirement? Get in touch with us to discuss
+        your project.
+      </p>
+
+      <div class="contact-details">
+        <a class="contact-item" href="tel:+201063490327">
+          +20 106 349 0327
+        </a>
+
+        <a class="contact-item"
+           href="mailto:elsharnoubyfady@gmail.com">
+          Email Us
+        </a>
+
+        <a class="contact-item"
+           href="https://wa.me/201063490327"
+           target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+      </div>
+
+      <a class="btn btn-primary"
+         href="https://wa.me/201063490327"
+         target="_blank" rel="noopener">
+        START A PROJECT
+      </a>
+    </div>
+  </div>
 </section>
 
+</main>
+
 <footer>
-© 2026 Elsharnouby Engineering Solutions. All Rights Reserved.
-<br>Designed for Engineering Excellence.
+  <div class="container">
+    <p>
+      © <span id="year"></span>
+      <strong>Elsharnouby Engineering Solutions</strong>.
+      All Rights Reserved.
+    </p>
+    <p>Mechanical Design | CNC | Fabrication | Engineering</p>
+  </div>
 </footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/201063490327"
+   target="_blank" rel="noopener">
+  WhatsApp
+</a>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navigation").classList.toggle("active");
+}
+
+function closeMenu() {
+  document.getElementById("navigation").classList.remove("active");
+}
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
 
 </body>
 </html>
